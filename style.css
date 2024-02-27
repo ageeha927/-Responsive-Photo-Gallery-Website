@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.cards{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: .5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in ;
+
+}
+
+.cards h1{
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+#card-active{
+    background-image: url(./images/cobra.jpg);
+    flex: 5;
+}
+#card-active h1{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+#card-1{
+    background-image: url(./images/frog.jpg);
+}
+
+#card-2{
+    background-image: url(./images/dragon.jpg);
+}
+
+#card-3{
+    background-image: url(./images/chameloen.jpg);
+}
+
+#card-4{
+    background-image: url(./images/gecko.jpg);
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+        transition: opacity 0.3s ease-in 0.4s;
+    }
+    .cards:nth-of-type(4),
+    .cards:nth-of-type(5){
+        display: none;
+    }
+}
