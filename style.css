@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-
+li{
+    list-style: none;
+}
 
 body{
     display: flex;
@@ -15,7 +17,7 @@ body{
     position: relative;
 }
 
-nav li{
+nav li button{
     list-style: none;
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -27,33 +29,51 @@ nav li{
     border-radius: 50px;
     font-size: 24px;
     text-decoration: none;
+    padding: 15px 35px 15px 35px;
+    text-decoration: none;
 }
-button a{
+li a button img{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+}
+a{
     text-decoration: none;
     color: #ffffff;
 }
+img{
+    left: 89.8vw;
+    height: 120px;
+    width: 120px;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0);
+}
 #logo {
-    left: 89vw;
+    left: 89.8vw;
     top: 1vh;
     height: 120px;
     width: 120px;
     border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #one{
-    left: 6vw;
+    left: 8vw;
     top: 4vh;
     padding: 15px 35px 15px 35px;
 }
 
 #two{
-    left: 15vw;
+    left: 18vw;
     top: 4vh;
     padding: 15px 35px 15px 35px;
 }
 
 #three{
-    left: 25vw;
+    left: 29vw;
     top: 4vh;
     padding: 15px 35px 15px 35px;
 }
@@ -82,8 +102,9 @@ button a{
     display: flex;
     width: 90vw;
     position: relative;
-    top: 5vh;
-
+    top: 7vh;
+    left: 2vw;
+    right: 2vw;
 }
 
 .card{
@@ -121,26 +142,29 @@ button a{
 }
 
 @media (max-width: 768px) {
+    nav{
+        display: none;
+    }
     .container {
         display: block; /* Change to block to stack cards */
         position: relative;
-        left: 3vw;
+        left: 2vw;
         top: 10vh;
     }
     #none{
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 6vw;
+        left: 3cqh;
         top: 2vh;
-        right: 6vw;
+        right: 2vw;
         font-size: 20px;
         padding: 12px 12px 12px 12px;
     }
 
     .card h1{
         font-size: 20px;
-        right: 4vw;
+        right: 1vw;
     }
     
     .card {
