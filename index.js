@@ -1,14 +1,21 @@
-const cards = document.querySelectorAll(".cards")
+const card = document.querySelectorAll(".card")
 
-cards.forEach((card) => {
-    card.addEventListener('click', () => {
+card.forEach((c) => {
+    c.addEventListener('mouseover', () => {
         removeActiveClasses();
-        card.classList.add("active")
+        c.classList.add("active")
     })
 })
 
 function removeActiveClasses(){
-    cards.forEach((card) => {
-        card.classList.remove("active")
+    card.forEach((c) => {
+        c.classList.remove("active")
     })
 }
+
+card.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        const backgroundImage = card.style.backgroundImage
+        document.body.style.backgroundImage = backgroundImage
+    });
+});
