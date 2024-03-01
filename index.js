@@ -14,7 +14,7 @@ function removeActiveClasses(){
 }
 
 card.forEach(card => {
-    card.addEventListener('mouseenter', () => {
+    card.addEventListener('mouseover', () => {
         const backgroundImage = card.style.backgroundImage
         document.body.style.backgroundImage = backgroundImage
     });

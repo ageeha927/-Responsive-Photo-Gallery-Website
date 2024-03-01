@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-li{
-    list-style: none;
-}
+
 
 body{
     display: flex;
@@ -17,8 +15,11 @@ body{
     position: relative;
 }
 
-nav li button{
+li{
     list-style: none;
+}
+
+nav li button{
     color: rgb(255, 255, 255);
     font-size: 30px;
     position: absolute;
@@ -28,52 +29,32 @@ nav li button{
     border: 5px solid rgba(0, 0, 0, 0);
     border-radius: 50px;
     font-size: 24px;
-    text-decoration: none;
-    padding: 15px 35px 15px 35px;
-    text-decoration: none;
 }
-li a button img{
+button a{
     text-decoration: none;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0);
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
-img{
-    left: 89.8vw;
-    height: 120px;
-    width: 120px;
-    border-radius: 70px;
-    background-color: rgba(0, 0, 0, 0);
-}
-#logo {
-    left: 89.8vw;
-    top: 1vh;
-    height: 120px;
-    width: 120px;
-    border-radius: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0);
 }
 
 #one{
-    left: 8vw;
+    left: 25vw;
     top: 4vh;
     padding: 15px 35px 15px 35px;
 }
 
 #two{
-    left: 18vw;
+    left: 17vw;
     top: 4vh;
     padding: 15px 35px 15px 35px;
 }
 
 #three{
-    left: 29vw;
+    right: 14.5vw;
+    top: 4vh;
+    padding: 15px 35px 15px 35px;
+}
+
+#four{
+    right: 24.5vw;
     top: 4vh;
     padding: 15px 35px 15px 35px;
 }
@@ -84,9 +65,9 @@ img{
 
 #none{
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 36px;
     position: absolute;
-    top: 15px;
+    top: 27px;
     background-color: rgba(0, 0, 0, 0.457);
     background-blend-mode: darken;
     padding: 15px 35px 15px 35px;
@@ -96,15 +77,15 @@ img{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    right: 37vw;
 }
 
 .container{
     display: flex;
     width: 90vw;
     position: relative;
-    top: 7vh;
-    left: 2vw;
-    right: 2vw;
+    top: 5vh;
+
 }
 
 .card{
@@ -142,29 +123,26 @@ img{
 }
 
 @media (max-width: 768px) {
-    nav{
-        display: none;
-    }
     .container {
         display: block; /* Change to block to stack cards */
         position: relative;
-        left: 2vw;
+        left: 3vw;
         top: 10vh;
     }
     #none{
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 3cqh;
+        left: 6vw;
         top: 2vh;
-        right: 2vw;
+        right: 6vw;
         font-size: 20px;
         padding: 12px 12px 12px 12px;
     }
 
     .card h1{
         font-size: 20px;
-        right: 1vw;
+        right: 4vw;
     }
     
     .card {
